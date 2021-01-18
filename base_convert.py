@@ -1,12 +1,10 @@
-import math
+
 # int, int -> string
 #Recursive function that converts a number num to base b
 def convert(num, b):
     #base cases
     if(num == None or num < 0 or b == None or b <= 1):
         raise ValueError
-    elif (num >= 2**):
-        raise RecursionError
     elif (num < b):
         if num == 10:
             return "A"
