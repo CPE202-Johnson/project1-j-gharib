@@ -21,9 +21,10 @@ def convert(num, b):
         elif num == 15:
             return "F"
         return str(num)
+    
     #Rest of function goes here
     else:
-        quot = int(num/b)
+        quot = int(num//b)
         remainder = str(num%b)
         if remainder == "10":
             remainder = "A"
