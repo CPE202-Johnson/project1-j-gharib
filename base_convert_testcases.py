@@ -41,6 +41,8 @@ class TestBaseConvert(unittest.TestCase):
         with self.assertRaises(ValueError):  # used to check for exception
             convert(10, -1)
         
+        with self.assertRaises(RecursionError):  # used to check for exception
+            convert(1.8e308, 9)
 
 if __name__ == "__main__":
         unittest.main()
