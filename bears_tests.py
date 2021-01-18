@@ -14,5 +14,16 @@ class TestAssign1(unittest.TestCase):
     def test_bear_04(self):
         self.assertFalse(bears(41))
 
+    def test_bear_04(self):
+        self.assertFalse(bears(41))
+
+    def test_bear_error_01(self):
+        with self.assertRaises(ValueError):  # used to check for exception
+            bears(-1)
+            
+    def test_bear_error_02(self):
+        with self.assertRaises(ValueError):  # used to check for exception
+            bears(None)
+
 if __name__ == "__main__":
     unittest.main()

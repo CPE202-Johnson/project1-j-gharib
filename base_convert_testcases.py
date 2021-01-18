@@ -11,6 +11,22 @@ class TestBaseConvert(unittest.TestCase):
 
     def test_base16(self):
         self.assertEqual(convert(316,16),"13C")
+    
+    def test_baseError(self):
+        with self.assertRaises(ValueError):  # used to check for exception
+            convert(None, 1)
+        
+        with self.assertRaises(ValueError):  # used to check for exception
+            convert(12, None)
+
+        with self.assertRaises(ValueError):  # used to check for exception
+            convert(None, 1)
+
+        with self.assertRaises(ValueError):  # used to check for exception
+            convert(-12, 1)
+        with self.assertRaises(ValueError):  # used to check for exception
+            convert(10, -1)
+        
 
 if __name__ == "__main__":
         unittest.main()
