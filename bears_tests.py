@@ -14,8 +14,11 @@ class TestAssign1(unittest.TestCase):
     def test_bear_04(self):
         self.assertFalse(bears(41))
 
-    def test_bear_04(self):
+    def test_bear_05(self):
         self.assertFalse(bears(41))
+
+    def test_bear_05(self):
+        self.assertFalse(bears(81))
 
     def test_bear_error_01(self):
         with self.assertRaises(ValueError):  # used to check for exception
