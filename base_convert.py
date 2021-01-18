@@ -5,7 +5,7 @@ def convert(num, b):
     #base cases
     if(num == None or num < 0 or b == None or b <= 1):
         raise ValueError
-    elif (num >= 2**size):
+    elif (num >= 2**intSize):
         raise RecursionError
     elif (num < b):
         if num == 10:
@@ -23,7 +23,7 @@ def convert(num, b):
         return str(num)
     #Rest of function goes here
     else:
-        quot = math.trunc(num/b)
+        quot = int(num/b)
         remainder = str(num%b)
         if remainder == "10":
             remainder = "A"
