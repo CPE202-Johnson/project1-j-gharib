@@ -17,7 +17,7 @@ def convert(num, b):
             return "E"
         elif num == 15:
             return "F"
-        return num
+        return str(num)
     #Rest of function goes here
     else:
         quot = int(num/b)
