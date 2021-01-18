@@ -5,7 +5,19 @@ def convert(num, b):
     if(num == None or num < 0 or b == None or b <= 1):
         raise ValueError
     elif (num < b):
-            return num
+        if num == 10:
+            return "A"
+        elif num == 11:
+            return "B"
+        elif num == 12:
+            return "C"
+        elif num == 13:
+            return "D"
+        elif num == 14:
+            return "E"
+        elif num == 15:
+            return "F"
+        return num
     #Rest of function goes here
     else:
         quot = int(num/b)
@@ -22,5 +34,5 @@ def convert(num, b):
             remainder = "E"
         elif remainder == "15":
             remainder = "F"
-            
+
         return "%s%s" %(convert(quot, b), remainder)
