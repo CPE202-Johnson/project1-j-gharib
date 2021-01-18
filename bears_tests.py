@@ -18,7 +18,7 @@ class TestAssign1(unittest.TestCase):
         self.assertFalse(bears(41))
 
     def test_bear_06(self):
-        self.assertFalse(bears(300))
+        self.assertFalse(bears(303))
 
     def test_bear_07(self):
         self.assertFalse(bears(100))
