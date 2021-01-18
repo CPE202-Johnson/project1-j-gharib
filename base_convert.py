@@ -5,7 +5,7 @@ def convert(num, b):
     #base cases
     if(num == None or num < 0 or b == None or b <= 1):
         raise ValueError
-    elif (num >= 2**intSize):
+    elif (num >= 2**):
         raise RecursionError
     elif (num < b):
         if num == 10:
