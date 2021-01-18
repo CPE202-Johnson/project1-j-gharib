@@ -1,4 +1,5 @@
 def bears(n):
+    print("Execute for ", n)
     #Throw an error for invalid inputs
     if n == None or n < 0:
         raise ValueError
@@ -16,7 +17,7 @@ def bears(n):
             return True
         
     #Check if you subtract the last two digits what happens
-    if(n%3 == 0 or n%4 == 0):
+    if(n%3 == 0):
         #Combine the last 2 digits of the number
         firstNum = n%10
         secondNum = n%100 - n%10
@@ -28,6 +29,18 @@ def bears(n):
         elif bears(n - res):
             return True
 
+    #Check if you subtract the last two digits what happens
+    if(n%4 == 0):
+        #Combine the last 2 digits of the number
+        firstNum = n%10
+        secondNum = n%100 - n%10
+        secondNum /= 10
+        res = firstNum * secondNum
+
+        if (res == 0):
+            return False
+        elif bears(n - res):
+            return True
     #Check if you subtract 42 what happens
     if (n%5 ==0):
         if bears(n-42):
@@ -35,4 +48,4 @@ def bears(n):
 
     return False
 
-print(bears(360))
+print(bears(210))
