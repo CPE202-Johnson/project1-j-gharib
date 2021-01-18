@@ -3,7 +3,7 @@ import math
 #Recursive function that converts a number num to base b
 def convert(num, b):
     #base cases
-    if(num == None or num < 0 or b == None or b <= 1):
+    if(num == None or num < 0 or b == None or b <= 1 or num > 10**4):
         raise ValueError
     elif (num < b):
         if num == 10:
