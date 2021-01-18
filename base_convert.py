@@ -1,3 +1,4 @@
+import math
 # int, int -> string
 #Recursive function that converts a number num to base b
 def convert(num, b):
@@ -20,7 +21,7 @@ def convert(num, b):
         return str(num)
     #Rest of function goes here
     else:
-        quot = int(num/b)
+        quot = math.trunc(num/b)
         remainder = str(num%b)
         if remainder == "10":
             remainder = "A"
