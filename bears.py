@@ -25,7 +25,7 @@ def bears(n):
         res = firstNum * secondNum
 
         if (res == 0):
-            return False
+            firstNum +=1
         elif bears(n - res):
             return True
 
@@ -38,7 +38,7 @@ def bears(n):
         res = firstNum * secondNum
 
         if (res == 0):
-            return False
+            firstNum +=1
         elif bears(n - res):
             return True
     #Check if you subtract 42 what happens
