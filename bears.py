@@ -1,5 +1,4 @@
 def bears(n):
-    print("Execute for ", n)
     #Throw an error for invalid inputs
     if n == None or n < 0:
         raise ValueError
@@ -35,5 +34,3 @@ def bears(n):
             return True
 
     return False
-
-print(bears(210))
