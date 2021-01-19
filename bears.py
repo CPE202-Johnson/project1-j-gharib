@@ -1,3 +1,5 @@
+#int -> boolean
+#Function that checks if it is possible to reach 42 by following 3 dominant rules recursively
 def bears(n):
     #Throw an error for invalid inputs
     if n == None or n < 0:
