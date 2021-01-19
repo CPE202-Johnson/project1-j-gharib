@@ -3,7 +3,10 @@
 def perm_gen_lex(perm): 
     strings = []
     #Base case
-    if (len(perm) <= 1) :
+    if len(perm) <= 0:
+        return []
+    
+    elif (len(perm) == 1) :
         return [perm]
 
     else:
